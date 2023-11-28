@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farrell Sevillen Arya Assignment 1 </title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<style>
+    .header {
+  padding: 30px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 50px;
+  font-family: sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+h5, h2 {
+  color: red
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+  $(".navbar-brand").hover(function() {
+    $(this).css({
+      "color": "blue",
+      "text-decoration": "underline"
+    });
+  }, function() {
+    $(this).css({
+      "color": "black",
+      "text-decoration": "none"
+    });
+  });
+});
+  $(document).ready(function() {
+    $("#nav1").hover(function() {
+      $(this).css({
+        "color": "blue",
+        "text-decoration": "underline"
+      });
+    }, function() {
+      $(this).css({
+        "color": "white",
+        "text-decoration": "none"
+      });
+    });
+  });
+  $(document).ready(function() {
+  $(".card-img, .card-title, p").hide();
+
+  $("h5").click(function() {
+    $(".card-img, .card-title, p").fadeToggle(); 
+
+    });
+  });
+  $(document).ready(function() {
+  $("#bod2").hide();
+
+  $("#ski").click(function() {
+    $("#bod2").fadeToggle(); 
+
+    });
+  });
+  $(document).ready(function() {
+  $("#bod3").hide();
+
+  $("#pro").click(function() {
+    $("#bod3").fadeToggle(); 
+
+    });
+  });
+    $(document).ready(function() {
+    $("h5, h2").hover(function() {
+      $(this).css({
+        "color": "blue",
+        "text-decoration": "underline"
+      });
+    }, function() {
+      $(this).css({
+        "color": "red",
+        "text-decoration": "none"
+      });
+    });
+  });
+</script>
+</head>
+<body>
+<nav class="navbar bg-body-tertiary" class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a id="nav1" class="navbar-brand" href="index.html">Farrell Sevillen Arya</a>
+    </div>
+  </nav>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="social_media.html">Social Media</a>
+    </div>
+  </nav>  
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="education.html">Education</a>
+    </div>
+  </nav>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="hobby.html">Hobby</a>
+    </div>
+  </nav>
+  <div class="leftside">
+    <div class="card" style="width: 100%;">
+        <img src="profile.jpg" class="card-img" alt="..." max-width="100%">
+        <div class="card-body">
+          <h3 class="card-title">Farrell Sevillen Arya</h3>
+          <h5>About Me</h5>
+          <p class="card-text">I am an 18 year old stundent studying computer science. I live in the Sunter area in North Jakarta. I have 2 dogs at home. I have the second and youngest child in my family. I hope to get a good paying job in the future and be able to learn a lot of things through Binus University. I am looking forward to making new friends and expanding my network as well at Binus University.</p>
+        </div>
+      </div>
+      </div>
+      <div class="rightside">
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+          <h2 id="ski">Programming Skills</h2>
+          <div id="bod2">
+          <ul>
+          <li><input type="checkbox" id="Skill1" name="Skill1" value="HTML" checked>
+          <label for="Skill1">HTML</label><br></li>
+          <li><input type="checkbox" id="Skill2" name="Skill2" value="JavaScript" checked>
+          <label for="Skill2">JavaScript</label></li>
+          <li><input type="checkbox" id="Skill3" name="Skill3" value="Python" checked>
+          <label for="Skill3">Python</label></li>
+      </ul>
+      </div>
+      </div>
+  </div>
+  <div class="card" style="width: 100%;">
+    <div class="card-body">
+    <h2 id="pro">Projects</h2>
+    <div id="bod3">
+    <ul">
+    <li><a href="https://relkereta.github.io/portfolio/">Portfolio</a>
+      <li><a href="https://relkereta.github.io/HCI_FORUM/">Forum Project</a>
+        <li><a href="https://relkereta.github.io/HCI-Lab/">Lab Project</a> 
+</ul>
+</div>
+</div>
+</div>
+          </div>
+  </body>
+  </html>
