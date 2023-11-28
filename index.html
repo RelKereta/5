@@ -95,6 +95,18 @@ h5, h2 {
 
     });
   });
+  $("#pp").click(function() {
+    $("#part").fadeToggle(); 
+
+    });
+  $("#he").click(function() {
+    $("#her").fadeToggle(); 
+
+    });
+    $("#por").click(function() {
+    $("#port").fadeToggle(); 
+
+    });
     $(document).ready(function() {
     $("h5, h2").hover(function() {
       $(this).css({
@@ -162,9 +174,25 @@ h5, h2 {
     <h2 id="pro">Projects</h2>
     <div id="bod3">
     <ul">
-    <li><a href="https://relkereta.github.io/portfolio/">Portfolio</a>
-      <li><a href="https://relkereta.github.io/HCI_FORUM/">Forum Project</a>
-        <li><a href="https://relkereta.github.io/HCI-Lab/">Lab Project</a> 
+    <li><h5 id="pp">Portfolio<h5>
+      <div id="part">
+      <p>This is a  website.</p>
+      <img src="logo.png">
+    </div>
+    </li>
+    <li><h5 id="por">Portfolio<h5>
+      <div id="port">
+      <p>This is a portfolio website that I created using HTML and CSS.</p>
+      <img src="footy.jpg">
+    </div>
+    </li>
+    <li><h5 id="he">gundam<h5>
+      <div id="her">
+      <p>This is a random text about a random project.</p>
+      <img src="gundam.jpg">
+    </div>
+    </li>
+      
 </ul>
 </div>
 </div>
